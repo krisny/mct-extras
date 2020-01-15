@@ -31,6 +31,8 @@ function d2 = mc2frontal2(d, m1, m2, method)
 %
 % Part of the Motion Capture Toolbox, Copyright 2008,
 % University of Jyvaskyla, Finland
+%
+% KN edit 2020-01-15, Retain rotation vector in output variable (d2.other.rotation)
 
 if nargin<4 
     method = 'mean'; 
