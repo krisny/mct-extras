@@ -51,7 +51,7 @@ end
 
 
 
-mcplot3Dframe(b,1,p2)
+mcplot3Dframe(b,1,p2);
 hold all
 
 for i = 1:length(keymarkers)
