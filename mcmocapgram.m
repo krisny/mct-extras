@@ -97,12 +97,12 @@ end
 
 for i = 1:d.nMarkers
     if ~exist('maxscale','var')
-        mr = max(r(i,:));
-        mg = max(g(i,:));
-        mb = max(b(i,:)); 
         r(i,:) = r(i,:)-min(r(i,:));
         g(i,:) = g(i,:)-min(g(i,:));
         b(i,:) = b(i,:)-min(b(i,:));
+        mr = max(r(i,:));
+        mg = max(g(i,:));
+        mb = max(b(i,:)); 
     end
     r(i,:) = r(i,:)./mr;
     g(i,:) = g(i,:)./mg;
